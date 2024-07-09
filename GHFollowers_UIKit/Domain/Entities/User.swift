@@ -3,7 +3,6 @@
 //  GHFollowers_UIKit
 //
 //  Created by winsen on 09/07/24.
-//
 
 import Foundation
 
@@ -49,3 +48,4 @@ extension User {
              followers: 270,
              createdAt: Date())
 }
+

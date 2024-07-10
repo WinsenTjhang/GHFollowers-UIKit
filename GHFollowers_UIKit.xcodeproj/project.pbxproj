@@ -16,7 +16,23 @@
 		70C24DC22C3CFE2E0051FD55 /* AppDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C24DC12C3CFE2E0051FD55 /* AppDependencyContainer.swift */; };
 		70C24DC42C3D16E10051FD55 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C24DC32C3D16E10051FD55 /* AppCoordinator.swift */; };
 		70C24DDE2C3D1CF00051FD55 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C24DDD2C3D1CF00051FD55 /* User.swift */; };
-		70C24DE02C3D1D250051FD55 /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C24DDF2C3D1D250051FD55 /* Follower.swift */; };
+		70C24DE22C3E37ED0051FD55 /* FetchFollowersUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C24DE12C3E37ED0051FD55 /* FetchFollowersUseCase.swift */; };
+		70C24DE52C3E39C80051FD55 /* FetchUserDetailUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C24DE42C3E39C80051FD55 /* FetchUserDetailUseCase.swift */; };
+		70C24DE72C3E3BAA0051FD55 /* FetchImageUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C24DE62C3E3BAA0051FD55 /* FetchImageUseCase.swift */; };
+		70C24DE92C3E3C2F0051FD55 /* GitHubRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C24DE82C3E3C2F0051FD55 /* GitHubRepository.swift */; };
+		70C24DEB2C3E3D2C0051FD55 /* FetchFollowersUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C24DEA2C3E3D2C0051FD55 /* FetchFollowersUseCaseImpl.swift */; };
+		70C24DED2C3E43BC0051FD55 /* FetchUserDetailUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C24DEC2C3E43BC0051FD55 /* FetchUserDetailUseCaseImpl.swift */; };
+		70C24DEF2C3E44040051FD55 /* FetchImageUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C24DEE2C3E44040051FD55 /* FetchImageUseCaseImpl.swift */; };
+		70C24DF12C3E44CE0051FD55 /* UserDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C24DF02C3E44CE0051FD55 /* UserDTO.swift */; };
+		70C24DF32C3E468D0051FD55 /* UserRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C24DF22C3E468D0051FD55 /* UserRepositoryImpl.swift */; };
+		70C24DF52C3E628E0051FD55 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C24DF42C3E628E0051FD55 /* NetworkService.swift */; };
+		70C24DF72C3E7B9A0051FD55 /* FavoritesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C24DF62C3E7B9A0051FD55 /* FavoritesRepository.swift */; };
+		70C24DF92C3E7C130051FD55 /* SaveFavoritesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C24DF82C3E7C130051FD55 /* SaveFavoritesUseCase.swift */; };
+		70C24DFB2C3E7D080051FD55 /* RemoveFavoriteUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C24DFA2C3E7D080051FD55 /* RemoveFavoriteUseCase.swift */; };
+		70C24DFD2C3E7D200051FD55 /* FetchFavoritesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C24DFC2C3E7D200051FD55 /* FetchFavoritesUseCase.swift */; };
+		70C24DFF2C3E7DBD0051FD55 /* SaveFavoriteUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C24DFE2C3E7DBD0051FD55 /* SaveFavoriteUseCaseImpl.swift */; };
+		70C24E012C3E7DC90051FD55 /* RemoveFavoriteUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C24E002C3E7DC90051FD55 /* RemoveFavoriteUseCaseImpl.swift */; };
+		70C24E032C3E7DD90051FD55 /* FetchFavoritesUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C24E022C3E7DD90051FD55 /* FetchFavoritesUseCaseImpl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +47,23 @@
 		70C24DC12C3CFE2E0051FD55 /* AppDependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencyContainer.swift; sourceTree = "<group>"; };
 		70C24DC32C3D16E10051FD55 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		70C24DDD2C3D1CF00051FD55 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		70C24DDF2C3D1D250051FD55 /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
+		70C24DE12C3E37ED0051FD55 /* FetchFollowersUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchFollowersUseCase.swift; sourceTree = "<group>"; };
+		70C24DE42C3E39C80051FD55 /* FetchUserDetailUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchUserDetailUseCase.swift; sourceTree = "<group>"; };
+		70C24DE62C3E3BAA0051FD55 /* FetchImageUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchImageUseCase.swift; sourceTree = "<group>"; };
+		70C24DE82C3E3C2F0051FD55 /* GitHubRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubRepository.swift; sourceTree = "<group>"; };
+		70C24DEA2C3E3D2C0051FD55 /* FetchFollowersUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchFollowersUseCaseImpl.swift; sourceTree = "<group>"; };
+		70C24DEC2C3E43BC0051FD55 /* FetchUserDetailUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchUserDetailUseCaseImpl.swift; sourceTree = "<group>"; };
+		70C24DEE2C3E44040051FD55 /* FetchImageUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchImageUseCaseImpl.swift; sourceTree = "<group>"; };
+		70C24DF02C3E44CE0051FD55 /* UserDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDTO.swift; sourceTree = "<group>"; };
+		70C24DF22C3E468D0051FD55 /* UserRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryImpl.swift; sourceTree = "<group>"; };
+		70C24DF42C3E628E0051FD55 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		70C24DF62C3E7B9A0051FD55 /* FavoritesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesRepository.swift; sourceTree = "<group>"; };
+		70C24DF82C3E7C130051FD55 /* SaveFavoritesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveFavoritesUseCase.swift; sourceTree = "<group>"; };
+		70C24DFA2C3E7D080051FD55 /* RemoveFavoriteUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveFavoriteUseCase.swift; sourceTree = "<group>"; };
+		70C24DFC2C3E7D200051FD55 /* FetchFavoritesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchFavoritesUseCase.swift; sourceTree = "<group>"; };
+		70C24DFE2C3E7DBD0051FD55 /* SaveFavoriteUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveFavoriteUseCaseImpl.swift; sourceTree = "<group>"; };
+		70C24E002C3E7DC90051FD55 /* RemoveFavoriteUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveFavoriteUseCaseImpl.swift; sourceTree = "<group>"; };
+		70C24E022C3E7DD90051FD55 /* FetchFavoritesUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchFavoritesUseCaseImpl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,9 +195,9 @@
 		70C24DCE2C3D1B0D0051FD55 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				70C24DCF2C3D1B150051FD55 /* Entities */,
 				70C24DD12C3D1B2B0051FD55 /* Interfaces */,
 				70C24DD02C3D1B200051FD55 /* UseCases */,
-				70C24DCF2C3D1B150051FD55 /* Entities */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -174,7 +206,6 @@
 			isa = PBXGroup;
 			children = (
 				70C24DDD2C3D1CF00051FD55 /* User.swift */,
-				70C24DDF2C3D1D250051FD55 /* Follower.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -182,6 +213,12 @@
 		70C24DD02C3D1B200051FD55 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				70C24DEA2C3E3D2C0051FD55 /* FetchFollowersUseCaseImpl.swift */,
+				70C24DEC2C3E43BC0051FD55 /* FetchUserDetailUseCaseImpl.swift */,
+				70C24DEE2C3E44040051FD55 /* FetchImageUseCaseImpl.swift */,
+				70C24DFE2C3E7DBD0051FD55 /* SaveFavoriteUseCaseImpl.swift */,
+				70C24E002C3E7DC90051FD55 /* RemoveFavoriteUseCaseImpl.swift */,
+				70C24E022C3E7DD90051FD55 /* FetchFavoritesUseCaseImpl.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -189,6 +226,7 @@
 		70C24DD12C3D1B2B0051FD55 /* Interfaces */ = {
 			isa = PBXGroup;
 			children = (
+				70C24DE32C3E398B0051FD55 /* UseCases */,
 				70C24DD22C3D1B330051FD55 /* Repositories */,
 			);
 			path = Interfaces;
@@ -197,6 +235,8 @@
 		70C24DD22C3D1B330051FD55 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				70C24DE82C3E3C2F0051FD55 /* GitHubRepository.swift */,
+				70C24DF62C3E7B9A0051FD55 /* FavoritesRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -214,6 +254,7 @@
 		70C24DD42C3D1B570051FD55 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				70C24DF22C3E468D0051FD55 /* UserRepositoryImpl.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -230,6 +271,7 @@
 		70C24DD62C3D1B740051FD55 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				70C24DF02C3E44CE0051FD55 /* UserDTO.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -268,6 +310,7 @@
 		70C24DDB2C3D1C6A0051FD55 /* Remote */ = {
 			isa = PBXGroup;
 			children = (
+				70C24DF42C3E628E0051FD55 /* NetworkService.swift */,
 			);
 			path = Remote;
 			sourceTree = "<group>";
@@ -277,6 +320,19 @@
 			children = (
 			);
 			path = Local;
+			sourceTree = "<group>";
+		};
+		70C24DE32C3E398B0051FD55 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				70C24DE12C3E37ED0051FD55 /* FetchFollowersUseCase.swift */,
+				70C24DE42C3E39C80051FD55 /* FetchUserDetailUseCase.swift */,
+				70C24DE62C3E3BAA0051FD55 /* FetchImageUseCase.swift */,
+				70C24DF82C3E7C130051FD55 /* SaveFavoritesUseCase.swift */,
+				70C24DFA2C3E7D080051FD55 /* RemoveFavoriteUseCase.swift */,
+				70C24DFC2C3E7D200051FD55 /* FetchFavoritesUseCase.swift */,
+			);
+			path = UseCases;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -350,12 +406,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70C24DE92C3E3C2F0051FD55 /* GitHubRepository.swift in Sources */,
+				70C24E012C3E7DC90051FD55 /* RemoveFavoriteUseCaseImpl.swift in Sources */,
+				70C24DFF2C3E7DBD0051FD55 /* SaveFavoriteUseCaseImpl.swift in Sources */,
 				70C24CE72C0434D50051FD55 /* ViewController.swift in Sources */,
-				70C24DE02C3D1D250051FD55 /* Follower.swift in Sources */,
+				70C24DF92C3E7C130051FD55 /* SaveFavoritesUseCase.swift in Sources */,
 				70C24CE32C0434D50051FD55 /* AppDelegate.swift in Sources */,
+				70C24DFD2C3E7D200051FD55 /* FetchFavoritesUseCase.swift in Sources */,
 				70C24DDE2C3D1CF00051FD55 /* User.swift in Sources */,
+				70C24DE72C3E3BAA0051FD55 /* FetchImageUseCase.swift in Sources */,
+				70C24E032C3E7DD90051FD55 /* FetchFavoritesUseCaseImpl.swift in Sources */,
 				70C24DC42C3D16E10051FD55 /* AppCoordinator.swift in Sources */,
+				70C24DF32C3E468D0051FD55 /* UserRepositoryImpl.swift in Sources */,
 				70C24DC22C3CFE2E0051FD55 /* AppDependencyContainer.swift in Sources */,
+				70C24DEF2C3E44040051FD55 /* FetchImageUseCaseImpl.swift in Sources */,
+				70C24DFB2C3E7D080051FD55 /* RemoveFavoriteUseCase.swift in Sources */,
+				70C24DEB2C3E3D2C0051FD55 /* FetchFollowersUseCaseImpl.swift in Sources */,
+				70C24DF52C3E628E0051FD55 /* NetworkService.swift in Sources */,
+				70C24DED2C3E43BC0051FD55 /* FetchUserDetailUseCaseImpl.swift in Sources */,
+				70C24DE52C3E39C80051FD55 /* FetchUserDetailUseCase.swift in Sources */,
+				70C24DF72C3E7B9A0051FD55 /* FavoritesRepository.swift in Sources */,
+				70C24DE22C3E37ED0051FD55 /* FetchFollowersUseCase.swift in Sources */,
+				70C24DF12C3E44CE0051FD55 /* UserDTO.swift in Sources */,
 				70C24CE52C0434D50051FD55 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -515,6 +587,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -542,6 +615,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

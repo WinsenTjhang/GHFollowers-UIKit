@@ -9,9 +9,9 @@ import Foundation
 import Combine
 
 class FetchUserDetailUseCaseImpl: FetchUserDetailUseCase {
-private let repository: GitHubRepository
+    private let repository: GitHubRepositoryInterface
     
-    init(repository: GitHubRepository) {
+    init(repository: GitHubRepositoryInterface) {
         self.repository = repository
     }
     

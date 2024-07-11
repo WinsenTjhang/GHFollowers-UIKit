@@ -32,6 +32,22 @@ struct User {
             self.followers = dto.followers
             self.createdAt = dto.createdAt.flatMap { ISO8601DateFormatter().date(from: $0) }
         }
+    
+    func toDTO() -> UserDTO {
+            return UserDTO(
+                login: login,
+                avatarUrl: avatarUrl.absoluteString,
+                name: name,
+                location: location,
+                bio: bio,
+                publicRepos: publicRepos,
+                publicGists: publicGists,
+                htmlUrl: htmlUrl?.absoluteString,
+                following: following,
+                followers: followers,
+                createdAt: createdAt.map { ISO8601DateFormatter().string(from: $0) }
+            )
+        }
 }
 
 extension User {

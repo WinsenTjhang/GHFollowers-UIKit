@@ -8,7 +8,7 @@
 import UIKit
 import Combine
 
-class UserRepositoryImpl: GitHubRepository {
+class GithubRepository: GitHubRepositoryInterface {
     private let networkService: NetworkService
     private let imageCache: NSCache<NSString, UIImage>
     

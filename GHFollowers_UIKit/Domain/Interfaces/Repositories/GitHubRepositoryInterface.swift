@@ -8,7 +8,7 @@
 import UIKit
 import Combine
 
-protocol GitHubRepository {
+protocol GitHubRepositoryInterface {
     func fetchFollowers(for username: String, page: Int) -> AnyPublisher<[User], Error>
     func fetchUserDetail(for username: String) -> AnyPublisher<User, Error>
     func fetchImage(from url: URL) -> AnyPublisher<UIImage, Error>

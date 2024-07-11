@@ -9,9 +9,9 @@ import UIKit
 import Combine
 
 class FetchImageUseCaseImpl: FetchImageUseCase {
-    private let repository: GitHubRepository
+    private let repository: GitHubRepositoryInterface
     
-    init(repository: GitHubRepository) {
+    init(repository: GitHubRepositoryInterface) {
         self.repository = repository
     }
     

@@ -9,9 +9,9 @@ import Foundation
 import Combine
 
 class FetchFollowersUseCaseImpl: FetchFollowersUseCase {
-    private let repository: GitHubRepository
+    private let repository: GitHubRepositoryInterface
     
-    init(repository: GitHubRepository) {
+    init(repository: GitHubRepositoryInterface) {
         self.repository = repository
     }
     

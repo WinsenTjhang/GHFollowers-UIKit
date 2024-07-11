@@ -7,8 +7,8 @@
 
 import Combine
 
-protocol FavoritesRepository {
+protocol FavoritesRepositoryInterface {
     func saveFavorite(_ user: User) -> AnyPublisher<Void, Error>
     func removeFavorite(_ user: User) -> AnyPublisher<Void, Error>
-    func fetchFavorites() -> AnyPublisher<[User], Error>
+    func getFavorites() -> AnyPublisher<[User], Error>
 }

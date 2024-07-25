@@ -7,10 +7,10 @@
 
 import Combine
 
-class SaveFavoriteUseCase {
-    private let repository: FavoritesRepository
+class SaveFavoriteUseCaseImpl: SaveFavoritesUseCase {
+    private let repository: FavoritesRepositoryInterface
     
-    init(repository: FavoritesRepository) {
+    init(repository: FavoritesRepositoryInterface) {
         self.repository = repository
     }
     

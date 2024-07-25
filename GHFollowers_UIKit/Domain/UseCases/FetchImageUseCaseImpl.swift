@@ -15,7 +15,7 @@ class FetchImageUseCaseImpl: FetchImageUseCase {
         self.repository = repository
     }
     
-    func execute(from url: URL) -> AnyPublisher<UIImage, Error> {
+    func execute(from url: String) -> AnyPublisher<UIImage, Error> {
         return repository.fetchImage(from: url)
     }
 }

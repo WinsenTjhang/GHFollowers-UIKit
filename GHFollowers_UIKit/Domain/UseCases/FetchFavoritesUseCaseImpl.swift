@@ -7,14 +7,14 @@
 
 import Combine
 
-class FetchFavoritesUseCaseImpl {
-    private let repository: FavoritesRepository
+class FetchFavoritesUseCaseImpl: FetchFavoritesUseCase {
+    private let repository: FavoritesRepositoryInterface
     
-    init(repository: FavoritesRepository) {
+    init(repository: FavoritesRepositoryInterface) {
         self.repository = repository
     }
     
-    func execute(user: User) -> AnyPublisher<[User], Error> {
-        return repository.fetchFavorites()
+    func execute() -> AnyPublisher<[User], Error> {
+        return repository.getFavorites()
     }
 }

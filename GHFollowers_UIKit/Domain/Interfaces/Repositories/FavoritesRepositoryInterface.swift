@@ -11,4 +11,6 @@ protocol FavoritesRepositoryInterface {
     func saveFavorite(_ user: User) -> AnyPublisher<Void, Error>
     func removeFavorite(_ user: User) -> AnyPublisher<Void, Error>
     func getFavorites() -> AnyPublisher<[User], Error>
+    func toggleFavorite(_ user: User) -> AnyPublisher<Bool, Error>
+    func checkFavoriteStatus(_ user: User) -> AnyPublisher<Bool, Error>
 }

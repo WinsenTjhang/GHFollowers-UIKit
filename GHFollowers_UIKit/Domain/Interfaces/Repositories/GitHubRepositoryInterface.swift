@@ -11,5 +11,5 @@ import Combine
 protocol GitHubRepositoryInterface {
     func fetchFollowers(for username: String, page: Int) -> AnyPublisher<[User], Error>
     func fetchUserDetail(for username: String) -> AnyPublisher<User, Error>
-    func fetchImage(from url: URL) -> AnyPublisher<UIImage, Error>
+    func fetchImage(from url: String) -> AnyPublisher<UIImage, Error>
 }

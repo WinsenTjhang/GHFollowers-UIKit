@@ -25,7 +25,28 @@ class FavoritesRepository: FavoritesRepositoryInterface {
     
     func getFavorites() -> AnyPublisher<[User], Error> {
         return localDataSource.getFavorites()
+//            .handleEvents(receiveOutput: { userDTOs in
+//                        print("Favorties: \(userDTOs)")
+//                    })
             .map { dtos in dtos.map { User(from: $0) } }
+            .eraseToAnyPublisher()
+    }
+    
+    func toggleFavorite(_ user: User) -> AnyPublisher<Bool, Error> {
+        return checkFavoriteStatus(user)
+            .flatMap { isFavorite -> AnyPublisher<Bool, Error> in
+                if isFavorite {
+                    return self.removeFavorite(user).map { false }.eraseToAnyPublisher()
+                } else {
+                    return self.saveFavorite(user).map { true }.eraseToAnyPublisher()
+                }
+            }
+            .eraseToAnyPublisher()
+    }
+    
+    func checkFavoriteStatus(_ user: User) -> AnyPublisher<Bool, Error> {
+        return getFavorites()
+            .map { favorites in favorites.contains { $0.login == user.login } }
             .eraseToAnyPublisher()
     }
 }

@@ -7,10 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		70A563472C48F23400C912F3 /* FavoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A563462C48F23400C912F3 /* FavoriteCell.swift */; };
+		70A563492C48F29000C912F3 /* FavoriteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70A563482C48F29000C912F3 /* FavoriteCell.xib */; };
+		70A5634B2C4E5F8300C912F3 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A5634A2C4E5F8300C912F3 /* UserInfoViewController.swift */; };
+		70A5634D2C4E5F9600C912F3 /* UserInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A5634C2C4E5F9600C912F3 /* UserInfoViewModel.swift */; };
+		70A5634F2C4E5FAE00C912F3 /* UserInfoViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70A5634E2C4E5FAE00C912F3 /* UserInfoViewController.storyboard */; };
+		70A563512C4F95A700C912F3 /* DateFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A563502C4F95A700C912F3 /* DateFormatter+Extension.swift */; };
 		70C24CE32C0434D50051FD55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C24CE22C0434D50051FD55 /* AppDelegate.swift */; };
 		70C24CE52C0434D50051FD55 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C24CE42C0434D50051FD55 /* SceneDelegate.swift */; };
-		70C24CE72C0434D50051FD55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C24CE62C0434D50051FD55 /* ViewController.swift */; };
-		70C24CEA2C0434D50051FD55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70C24CE82C0434D50051FD55 /* Main.storyboard */; };
+		70C24CE72C0434D50051FD55 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C24CE62C0434D50051FD55 /* SearchViewController.swift */; };
+		70C24CEA2C0434D50051FD55 /* SearchViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70C24CE82C0434D50051FD55 /* SearchViewController.storyboard */; };
 		70C24CEC2C0434D70051FD55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70C24CEB2C0434D70051FD55 /* Assets.xcassets */; };
 		70C24CEF2C0434D70051FD55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70C24CED2C0434D70051FD55 /* LaunchScreen.storyboard */; };
 		70C24DC22C3CFE2E0051FD55 /* AppDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C24DC12C3CFE2E0051FD55 /* AppDependencyContainer.swift */; };
@@ -24,8 +30,8 @@
 		70C24DED2C3E43BC0051FD55 /* FetchUserDetailUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C24DEC2C3E43BC0051FD55 /* FetchUserDetailUseCaseImpl.swift */; };
 		70C24DEF2C3E44040051FD55 /* FetchImageUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C24DEE2C3E44040051FD55 /* FetchImageUseCaseImpl.swift */; };
 		70C24DF12C3E44CE0051FD55 /* UserDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C24DF02C3E44CE0051FD55 /* UserDTO.swift */; };
-		70C24DF32C3E468D0051FD55 /* GithubRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C24DF22C3E468D0051FD55 /* GithubRepository.swift */; };
-		70C24DF52C3E628E0051FD55 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C24DF42C3E628E0051FD55 /* NetworkService.swift */; };
+		70C24DF32C3E468D0051FD55 /* GitHubRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C24DF22C3E468D0051FD55 /* GitHubRepository.swift */; };
+		70C24DF52C3E628E0051FD55 /* URLSessionNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C24DF42C3E628E0051FD55 /* URLSessionNetworkService.swift */; };
 		70C24DF72C3E7B9A0051FD55 /* FavoritesRepositoryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C24DF62C3E7B9A0051FD55 /* FavoritesRepositoryInterface.swift */; };
 		70C24DF92C3E7C130051FD55 /* SaveFavoritesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C24DF82C3E7C130051FD55 /* SaveFavoritesUseCase.swift */; };
 		70C24DFB2C3E7D080051FD55 /* RemoveFavoriteUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C24DFA2C3E7D080051FD55 /* RemoveFavoriteUseCase.swift */; };
@@ -35,14 +41,35 @@
 		70C24E032C3E7DD90051FD55 /* FetchFavoritesUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C24E022C3E7DD90051FD55 /* FetchFavoritesUseCaseImpl.swift */; };
 		70C24E052C3F86850051FD55 /* FavoritesLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C24E042C3F86850051FD55 /* FavoritesLocalDataSource.swift */; };
 		70C24E072C3F8E660051FD55 /* FavoritesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C24E062C3F8E660051FD55 /* FavoritesRepository.swift */; };
+		70C24E092C3FC6040051FD55 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C24E082C3FC6040051FD55 /* SearchViewModel.swift */; };
+		70C24E0C2C40E6A10051FD55 /* SearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C24E0B2C40E6A10051FD55 /* SearchCoordinator.swift */; };
+		70C24E0E2C40E6B20051FD55 /* FavoriteCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C24E0D2C40E6B20051FD55 /* FavoriteCoordinator.swift */; };
+		70C24E102C410C4C0051FD55 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C24E0F2C410C4C0051FD55 /* FavoriteViewController.swift */; };
+		70C24E122C424DA90051FD55 /* FavoriteViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70C24E112C424DA90051FD55 /* FavoriteViewController.storyboard */; };
+		70C24E142C44D1490051FD55 /* FavoriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C24E132C44D1490051FD55 /* FavoriteViewModel.swift */; };
+		70C24E162C44DBDE0051FD55 /* FollowerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C24E152C44DBDE0051FD55 /* FollowerListViewController.swift */; };
+		70C24E182C44DBEB0051FD55 /* FollowerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C24E172C44DBEB0051FD55 /* FollowerListViewModel.swift */; };
+		70C24E1A2C44DBFC0051FD55 /* FollowerListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70C24E192C44DBFC0051FD55 /* FollowerListViewController.storyboard */; };
+		70C24E1C2C44FF450051FD55 /* FollowerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70C24E1B2C44FF440051FD55 /* FollowerCell.xib */; };
+		70C24E1E2C44FF5F0051FD55 /* FollowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C24E1D2C44FF5F0051FD55 /* FollowerCell.swift */; };
+		70C24E202C4617F80051FD55 /* ToggleFavoriteUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C24E1F2C4617F80051FD55 /* ToggleFavoriteUseCase.swift */; };
+		70C24E222C46188C0051FD55 /* CheckFavoriteStatusUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C24E212C46188C0051FD55 /* CheckFavoriteStatusUseCase.swift */; };
+		70C24E242C4618D10051FD55 /* ToggleFavoriteUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C24E232C4618D10051FD55 /* ToggleFavoriteUseCaseImpl.swift */; };
+		70C24E262C4618E20051FD55 /* CheckFavoriteStatusUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C24E252C4618E20051FD55 /* CheckFavoriteStatusUseCaseImpl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		70A563462C48F23400C912F3 /* FavoriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCell.swift; sourceTree = "<group>"; };
+		70A563482C48F29000C912F3 /* FavoriteCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteCell.xib; sourceTree = "<group>"; };
+		70A5634A2C4E5F8300C912F3 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
+		70A5634C2C4E5F9600C912F3 /* UserInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewModel.swift; sourceTree = "<group>"; };
+		70A5634E2C4E5FAE00C912F3 /* UserInfoViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserInfoViewController.storyboard; sourceTree = "<group>"; };
+		70A563502C4F95A700C912F3 /* DateFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extension.swift"; sourceTree = "<group>"; };
 		70C24CDF2C0434D50051FD55 /* GHFollowers_UIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GHFollowers_UIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70C24CE22C0434D50051FD55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70C24CE42C0434D50051FD55 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		70C24CE62C0434D50051FD55 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		70C24CE92C0434D50051FD55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		70C24CE62C0434D50051FD55 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		70C24CE92C0434D50051FD55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SearchViewController.storyboard; sourceTree = "<group>"; };
 		70C24CEB2C0434D70051FD55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		70C24CEE2C0434D70051FD55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		70C24CF02C0434D70051FD55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,8 +84,8 @@
 		70C24DEC2C3E43BC0051FD55 /* FetchUserDetailUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchUserDetailUseCaseImpl.swift; sourceTree = "<group>"; };
 		70C24DEE2C3E44040051FD55 /* FetchImageUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchImageUseCaseImpl.swift; sourceTree = "<group>"; };
 		70C24DF02C3E44CE0051FD55 /* UserDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDTO.swift; sourceTree = "<group>"; };
-		70C24DF22C3E468D0051FD55 /* GithubRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubRepository.swift; sourceTree = "<group>"; };
-		70C24DF42C3E628E0051FD55 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		70C24DF22C3E468D0051FD55 /* GitHubRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubRepository.swift; sourceTree = "<group>"; };
+		70C24DF42C3E628E0051FD55 /* URLSessionNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionNetworkService.swift; sourceTree = "<group>"; };
 		70C24DF62C3E7B9A0051FD55 /* FavoritesRepositoryInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesRepositoryInterface.swift; sourceTree = "<group>"; };
 		70C24DF82C3E7C130051FD55 /* SaveFavoritesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveFavoritesUseCase.swift; sourceTree = "<group>"; };
 		70C24DFA2C3E7D080051FD55 /* RemoveFavoriteUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveFavoriteUseCase.swift; sourceTree = "<group>"; };
@@ -68,6 +95,21 @@
 		70C24E022C3E7DD90051FD55 /* FetchFavoritesUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchFavoritesUseCaseImpl.swift; sourceTree = "<group>"; };
 		70C24E042C3F86850051FD55 /* FavoritesLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesLocalDataSource.swift; sourceTree = "<group>"; };
 		70C24E062C3F8E660051FD55 /* FavoritesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesRepository.swift; sourceTree = "<group>"; };
+		70C24E082C3FC6040051FD55 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		70C24E0B2C40E6A10051FD55 /* SearchCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCoordinator.swift; sourceTree = "<group>"; };
+		70C24E0D2C40E6B20051FD55 /* FavoriteCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCoordinator.swift; sourceTree = "<group>"; };
+		70C24E0F2C410C4C0051FD55 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		70C24E112C424DA90051FD55 /* FavoriteViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FavoriteViewController.storyboard; sourceTree = "<group>"; };
+		70C24E132C44D1490051FD55 /* FavoriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewModel.swift; sourceTree = "<group>"; };
+		70C24E152C44DBDE0051FD55 /* FollowerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerListViewController.swift; sourceTree = "<group>"; };
+		70C24E172C44DBEB0051FD55 /* FollowerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerListViewModel.swift; sourceTree = "<group>"; };
+		70C24E192C44DBFC0051FD55 /* FollowerListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FollowerListViewController.storyboard; sourceTree = "<group>"; };
+		70C24E1B2C44FF440051FD55 /* FollowerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FollowerCell.xib; sourceTree = "<group>"; };
+		70C24E1D2C44FF5F0051FD55 /* FollowerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerCell.swift; sourceTree = "<group>"; };
+		70C24E1F2C4617F80051FD55 /* ToggleFavoriteUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleFavoriteUseCase.swift; sourceTree = "<group>"; };
+		70C24E212C46188C0051FD55 /* CheckFavoriteStatusUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckFavoriteStatusUseCase.swift; sourceTree = "<group>"; };
+		70C24E232C4618D10051FD55 /* ToggleFavoriteUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleFavoriteUseCaseImpl.swift; sourceTree = "<group>"; };
+		70C24E252C4618E20051FD55 /* CheckFavoriteStatusUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckFavoriteStatusUseCaseImpl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +123,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		70A563522C50F06800C912F3 /* FavoriteCell */ = {
+			isa = PBXGroup;
+			children = (
+				70A563462C48F23400C912F3 /* FavoriteCell.swift */,
+				70A563482C48F29000C912F3 /* FavoriteCell.xib */,
+			);
+			path = FavoriteCell;
+			sourceTree = "<group>";
+		};
+		70A563532C50F09C00C912F3 /* FollowerCell */ = {
+			isa = PBXGroup;
+			children = (
+				70C24E1B2C44FF440051FD55 /* FollowerCell.xib */,
+				70C24E1D2C44FF5F0051FD55 /* FollowerCell.swift */,
+			);
+			path = FollowerCell;
+			sourceTree = "<group>";
+		};
 		70C24CD62C0434D50051FD55 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				70C24DC02C3CFE0E0051FD55 /* Application */,
+				70C24E0A2C40E68D0051FD55 /* Coordinators */,
 				70C24DD72C3D1B820051FD55 /* Core */,
 				70C24DD32C3D1B480051FD55 /* Data */,
 				70C24DCE2C3D1B0D0051FD55 /* Domain */,
@@ -118,7 +179,6 @@
 				70C24CE22C0434D50051FD55 /* AppDelegate.swift */,
 				70C24CE42C0434D50051FD55 /* SceneDelegate.swift */,
 				70C24DC12C3CFE2E0051FD55 /* AppDependencyContainer.swift */,
-				70C24DC32C3D16E10051FD55 /* AppCoordinator.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -137,7 +197,7 @@
 			children = (
 				70C24DCB2C3D17690051FD55 /* UserInfoScene */,
 				70C24DCA2C3D175E0051FD55 /* FavoriteScene */,
-				70C24DC92C3D174C0051FD55 /* FollowersScene */,
+				70C24DC92C3D174C0051FD55 /* FollowerListScene */,
 				70C24DC82C3D172D0051FD55 /* SearchScene */,
 			);
 			path = Scenes;
@@ -155,22 +215,31 @@
 		70C24DC82C3D172D0051FD55 /* SearchScene */ = {
 			isa = PBXGroup;
 			children = (
-				70C24CE82C0434D50051FD55 /* Main.storyboard */,
-				70C24CE62C0434D50051FD55 /* ViewController.swift */,
+				70C24CE82C0434D50051FD55 /* SearchViewController.storyboard */,
+				70C24CE62C0434D50051FD55 /* SearchViewController.swift */,
+				70C24E082C3FC6040051FD55 /* SearchViewModel.swift */,
 			);
 			path = SearchScene;
 			sourceTree = "<group>";
 		};
-		70C24DC92C3D174C0051FD55 /* FollowersScene */ = {
+		70C24DC92C3D174C0051FD55 /* FollowerListScene */ = {
 			isa = PBXGroup;
 			children = (
+				70A563532C50F09C00C912F3 /* FollowerCell */,
+				70C24E152C44DBDE0051FD55 /* FollowerListViewController.swift */,
+				70C24E172C44DBEB0051FD55 /* FollowerListViewModel.swift */,
+				70C24E192C44DBFC0051FD55 /* FollowerListViewController.storyboard */,
 			);
-			path = FollowersScene;
+			path = FollowerListScene;
 			sourceTree = "<group>";
 		};
 		70C24DCA2C3D175E0051FD55 /* FavoriteScene */ = {
 			isa = PBXGroup;
 			children = (
+				70A563522C50F06800C912F3 /* FavoriteCell */,
+				70C24E0F2C410C4C0051FD55 /* FavoriteViewController.swift */,
+				70C24E112C424DA90051FD55 /* FavoriteViewController.storyboard */,
+				70C24E132C44D1490051FD55 /* FavoriteViewModel.swift */,
 			);
 			path = FavoriteScene;
 			sourceTree = "<group>";
@@ -178,6 +247,9 @@
 		70C24DCB2C3D17690051FD55 /* UserInfoScene */ = {
 			isa = PBXGroup;
 			children = (
+				70A5634A2C4E5F8300C912F3 /* UserInfoViewController.swift */,
+				70A5634C2C4E5F9600C912F3 /* UserInfoViewModel.swift */,
+				70A5634E2C4E5FAE00C912F3 /* UserInfoViewController.storyboard */,
 			);
 			path = UserInfoScene;
 			sourceTree = "<group>";
@@ -223,6 +295,8 @@
 				70C24DFE2C3E7DBD0051FD55 /* SaveFavoriteUseCaseImpl.swift */,
 				70C24E002C3E7DC90051FD55 /* RemoveFavoriteUseCaseImpl.swift */,
 				70C24E022C3E7DD90051FD55 /* FetchFavoritesUseCaseImpl.swift */,
+				70C24E232C4618D10051FD55 /* ToggleFavoriteUseCaseImpl.swift */,
+				70C24E252C4618E20051FD55 /* CheckFavoriteStatusUseCaseImpl.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -258,7 +332,7 @@
 		70C24DD42C3D1B570051FD55 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
-				70C24DF22C3E468D0051FD55 /* GithubRepository.swift */,
+				70C24DF22C3E468D0051FD55 /* GitHubRepository.swift */,
 				70C24E062C3F8E660051FD55 /* FavoritesRepository.swift */,
 			);
 			path = Repositories;
@@ -301,6 +375,7 @@
 		70C24DD92C3D1B970051FD55 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				70A563502C4F95A700C912F3 /* DateFormatter+Extension.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -315,7 +390,7 @@
 		70C24DDB2C3D1C6A0051FD55 /* Remote */ = {
 			isa = PBXGroup;
 			children = (
-				70C24DF42C3E628E0051FD55 /* NetworkService.swift */,
+				70C24DF42C3E628E0051FD55 /* URLSessionNetworkService.swift */,
 			);
 			path = Remote;
 			sourceTree = "<group>";
@@ -337,8 +412,20 @@
 				70C24DF82C3E7C130051FD55 /* SaveFavoritesUseCase.swift */,
 				70C24DFA2C3E7D080051FD55 /* RemoveFavoriteUseCase.swift */,
 				70C24DFC2C3E7D200051FD55 /* FetchFavoritesUseCase.swift */,
+				70C24E1F2C4617F80051FD55 /* ToggleFavoriteUseCase.swift */,
+				70C24E212C46188C0051FD55 /* CheckFavoriteStatusUseCase.swift */,
 			);
 			path = UseCases;
+			sourceTree = "<group>";
+		};
+		70C24E0A2C40E68D0051FD55 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				70C24DC32C3D16E10051FD55 /* AppCoordinator.swift */,
+				70C24E0B2C40E6A10051FD55 /* SearchCoordinator.swift */,
+				70C24E0D2C40E6B20051FD55 /* FavoriteCoordinator.swift */,
+			);
+			path = Coordinators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -400,8 +487,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				70C24CEF2C0434D70051FD55 /* LaunchScreen.storyboard in Resources */,
+				70C24E122C424DA90051FD55 /* FavoriteViewController.storyboard in Resources */,
 				70C24CEC2C0434D70051FD55 /* Assets.xcassets in Resources */,
-				70C24CEA2C0434D50051FD55 /* Main.storyboard in Resources */,
+				70C24E1C2C44FF450051FD55 /* FollowerCell.xib in Resources */,
+				70C24CEA2C0434D50051FD55 /* SearchViewController.storyboard in Resources */,
+				70C24E1A2C44DBFC0051FD55 /* FollowerListViewController.storyboard in Resources */,
+				70A5634F2C4E5FAE00C912F3 /* UserInfoViewController.storyboard in Resources */,
+				70A563492C48F29000C912F3 /* FavoriteCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,24 +504,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70C24E162C44DBDE0051FD55 /* FollowerListViewController.swift in Sources */,
+				70C24E0E2C40E6B20051FD55 /* FavoriteCoordinator.swift in Sources */,
 				70C24DE92C3E3C2F0051FD55 /* GitHubRepositoryInterface.swift in Sources */,
+				70C24E202C4617F80051FD55 /* ToggleFavoriteUseCase.swift in Sources */,
 				70C24E012C3E7DC90051FD55 /* RemoveFavoriteUseCaseImpl.swift in Sources */,
+				70C24E222C46188C0051FD55 /* CheckFavoriteStatusUseCase.swift in Sources */,
 				70C24E052C3F86850051FD55 /* FavoritesLocalDataSource.swift in Sources */,
 				70C24DFF2C3E7DBD0051FD55 /* SaveFavoriteUseCaseImpl.swift in Sources */,
-				70C24CE72C0434D50051FD55 /* ViewController.swift in Sources */,
+				70C24E0C2C40E6A10051FD55 /* SearchCoordinator.swift in Sources */,
+				70C24CE72C0434D50051FD55 /* SearchViewController.swift in Sources */,
+				70C24E182C44DBEB0051FD55 /* FollowerListViewModel.swift in Sources */,
 				70C24DF92C3E7C130051FD55 /* SaveFavoritesUseCase.swift in Sources */,
 				70C24CE32C0434D50051FD55 /* AppDelegate.swift in Sources */,
 				70C24DFD2C3E7D200051FD55 /* FetchFavoritesUseCase.swift in Sources */,
 				70C24DDE2C3D1CF00051FD55 /* User.swift in Sources */,
+				70A563472C48F23400C912F3 /* FavoriteCell.swift in Sources */,
 				70C24DE72C3E3BAA0051FD55 /* FetchImageUseCase.swift in Sources */,
+				70A5634D2C4E5F9600C912F3 /* UserInfoViewModel.swift in Sources */,
 				70C24E032C3E7DD90051FD55 /* FetchFavoritesUseCaseImpl.swift in Sources */,
 				70C24DC42C3D16E10051FD55 /* AppCoordinator.swift in Sources */,
-				70C24DF32C3E468D0051FD55 /* GithubRepository.swift in Sources */,
+				70A5634B2C4E5F8300C912F3 /* UserInfoViewController.swift in Sources */,
+				70C24DF32C3E468D0051FD55 /* GitHubRepository.swift in Sources */,
+				70C24E1E2C44FF5F0051FD55 /* FollowerCell.swift in Sources */,
 				70C24DC22C3CFE2E0051FD55 /* AppDependencyContainer.swift in Sources */,
 				70C24DEF2C3E44040051FD55 /* FetchImageUseCaseImpl.swift in Sources */,
 				70C24DFB2C3E7D080051FD55 /* RemoveFavoriteUseCase.swift in Sources */,
+				70C24E142C44D1490051FD55 /* FavoriteViewModel.swift in Sources */,
+				70C24E102C410C4C0051FD55 /* FavoriteViewController.swift in Sources */,
 				70C24DEB2C3E3D2C0051FD55 /* FetchFollowersUseCaseImpl.swift in Sources */,
-				70C24DF52C3E628E0051FD55 /* NetworkService.swift in Sources */,
+				70C24DF52C3E628E0051FD55 /* URLSessionNetworkService.swift in Sources */,
+				70C24E242C4618D10051FD55 /* ToggleFavoriteUseCaseImpl.swift in Sources */,
+				70A563512C4F95A700C912F3 /* DateFormatter+Extension.swift in Sources */,
+				70C24E092C3FC6040051FD55 /* SearchViewModel.swift in Sources */,
 				70C24DED2C3E43BC0051FD55 /* FetchUserDetailUseCaseImpl.swift in Sources */,
 				70C24DE52C3E39C80051FD55 /* FetchUserDetailUseCase.swift in Sources */,
 				70C24DF72C3E7B9A0051FD55 /* FavoritesRepositoryInterface.swift in Sources */,
@@ -437,18 +544,19 @@
 				70C24DF12C3E44CE0051FD55 /* UserDTO.swift in Sources */,
 				70C24CE52C0434D50051FD55 /* SceneDelegate.swift in Sources */,
 				70C24E072C3F8E660051FD55 /* FavoritesRepository.swift in Sources */,
+				70C24E262C4618E20051FD55 /* CheckFavoriteStatusUseCaseImpl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		70C24CE82C0434D50051FD55 /* Main.storyboard */ = {
+		70C24CE82C0434D50051FD55 /* SearchViewController.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				70C24CE92C0434D50051FD55 /* Base */,
 			);
-			name = Main.storyboard;
+			name = SearchViewController.storyboard;
 			sourceTree = "<group>";
 		};
 		70C24CED2C0434D70051FD55 /* LaunchScreen.storyboard */ = {
@@ -592,10 +700,10 @@
 				INFOPLIST_FILE = GHFollowers_UIKit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = SearchViewController;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -620,10 +728,10 @@
 				INFOPLIST_FILE = GHFollowers_UIKit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = SearchViewController;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

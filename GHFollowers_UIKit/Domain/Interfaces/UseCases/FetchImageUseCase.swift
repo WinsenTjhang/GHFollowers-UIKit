@@ -9,5 +9,5 @@ import UIKit
 import Combine
 
 protocol FetchImageUseCase {
-    func execute(from url: URL) -> AnyPublisher<UIImage, Error>
+    func execute(from url: String) -> AnyPublisher<UIImage, Error>
 }

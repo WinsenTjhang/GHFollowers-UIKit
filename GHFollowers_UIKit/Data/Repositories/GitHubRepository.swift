@@ -8,7 +8,7 @@
 import UIKit
 import Combine
 
-class GithubRepository: GitHubRepositoryInterface {
+class GitHubRepository: GitHubRepositoryInterface {
     private let networkService: NetworkService
     private let imageCache: NSCache<NSString, UIImage>
     
@@ -18,7 +18,7 @@ class GithubRepository: GitHubRepositoryInterface {
     }
     
     func fetchFollowers(for username: String, page: Int) -> AnyPublisher<[User], Error> {
-        let endpoint = "https://api.github.com/users/\(username)/followers?per_page=100&page=\(page)"
+        let endpoint = "https://api.github.com/users/\(username)/followers?per_page=20&page=\(page)"
         return networkService.get(url: endpoint)
             .decode(type: [UserDTO].self, decoder: JSONDecoder())
             .map { userDTOs in
@@ -37,17 +37,17 @@ class GithubRepository: GitHubRepositoryInterface {
             .eraseToAnyPublisher()
     }
     
-    func fetchImage(from url: URL) -> AnyPublisher<UIImage, Error> {
-        if let cachedImage = imageCache.object(forKey: url.absoluteString as NSString) {
+    func fetchImage(from url: String) -> AnyPublisher<UIImage, Error> {
+        if let cachedImage = imageCache.object(forKey: url as NSString) {
             return Just(cachedImage)
                 .setFailureType(to: Error.self)
                 .eraseToAnyPublisher()
         }
         
-        return networkService.getData(url: url.absoluteString)
+        return networkService.getData(url: url)
             .compactMap { UIImage(data: $0) }
             .handleEvents(receiveOutput: { [weak self] image in
-                self?.imageCache.setObject(image, forKey: url.absoluteString as NSString)
+                self?.imageCache.setObject(image, forKey: url as NSString)
             })
             .eraseToAnyPublisher()
     }
